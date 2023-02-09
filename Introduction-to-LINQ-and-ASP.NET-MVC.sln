@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introduction-to-LINQ-and-ASP.NET-MVC", "Introduction-to-LINQ-and-ASP.NET-MVC\Introduction-to-LINQ-and-ASP.NET-MVC.csproj", "{D66F13E6-0A26-488C-B2DA-89ABADDE6BA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introduction-to-LINQ-and-ASP.NET-MVC_Lab01", "Introduction-to-LINQ-and-ASP.NET-MVC_Lab01\Introduction-to-LINQ-and-ASP.NET-MVC_Lab01.csproj", "{266AB047-BF7A-42EE-85BE-A395C8469B7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D66F13E6-0A26-488C-B2DA-89ABADDE6BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D66F13E6-0A26-488C-B2DA-89ABADDE6BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D66F13E6-0A26-488C-B2DA-89ABADDE6BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266AB047-BF7A-42EE-85BE-A395C8469B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266AB047-BF7A-42EE-85BE-A395C8469B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266AB047-BF7A-42EE-85BE-A395C8469B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266AB047-BF7A-42EE-85BE-A395C8469B7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
