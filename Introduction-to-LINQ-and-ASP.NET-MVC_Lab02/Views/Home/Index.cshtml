@@ -1,8 +1,36 @@
-﻿@{
+﻿@model Introduction_to_LINQ_and_ASP.NET_MVC_Lab02.Models.ViewModels.MoviesAndActors
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
 </div>
+
+@if(Model.Message != null)
+{
+    <div>
+        @Model.Message
+    </div>
+}
+
+<h2>Movies</h2>
+@foreach(Movie m in Model.Movies)
+{
+    <div>
+        @m.Title (@m.Genre.ToString(), @m.ReleaseDate.ToString("d"))
+    </div>
+}
+
+<h2>Actors</h2>
+@foreach (Actor a in Model.Actors)
+{
+    <div>
+        @a.Name
+    </div>
+}
+
+<a asp-action="Index" asp-controller="Movie">Movies</a>
+<a href="/Movie/Index"></a>

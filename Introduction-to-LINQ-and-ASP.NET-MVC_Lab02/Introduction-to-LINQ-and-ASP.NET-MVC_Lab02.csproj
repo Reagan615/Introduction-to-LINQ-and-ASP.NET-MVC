@@ -7,4 +7,9 @@
     <RootNamespace>Introduction_to_LINQ_and_ASP.NET_MVC_Lab02</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+  </ItemGroup>
+
 </Project>
