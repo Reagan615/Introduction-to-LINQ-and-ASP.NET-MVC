@@ -1,4 +1,4 @@
-namespace Introduction_to_LINQ_and_ASP.NET_MVC_Lab03.Models
+namespace WebApplication3.Models
 {
     public class ErrorViewModel
     {

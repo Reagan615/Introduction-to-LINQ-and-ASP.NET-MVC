@@ -1,0 +1,12 @@
+﻿@model Actor
+
+<h1>@Model.Name</h1>
+
+<h3>Role</h3>
+<ul>
+    @foreach(Role s in Model._roles)
+    {
+        <li>@s.Credit</li>
+    }
+</ul>
+

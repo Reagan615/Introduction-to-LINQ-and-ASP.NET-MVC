@@ -1,0 +1,39 @@
+﻿@model WebApplication3.Models.ViewModels.CompareMoviesVM
+
+<form asp-action="CompareMovies" method="post">
+    <div>
+        <label>Select movie 1:</label>
+        <select asp-for="SelectedMovie1Id" asp-items="Model.MovieIds"></select>
+    </div>
+    <div>
+        <label>Select movie 2:</label>
+        <select asp-for="SelectedMovie2Id" asp-items="Model.MovieIds"></select>
+    </div>
+    <input type="submit" value="Compare Movies" />
+</form>
+
+@if(Model.SelectedMovie1 != null && Model.SelectedMovie2 != null) {
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>ReleaseDate</th>
+            <th>Budget</th>
+            <th>Genre</th>
+        </tr>
+        <tr>
+            <td>@Model.SelectedMovie1.Title</td>
+            <td>@Model.SelectedMovie1.ReleaseDate.ToString("d")</td>
+            <td>@Model.SelectedMovie1.Budget</td>
+            <td>@Model.SelectedMovie1.Genre</td>
+        </tr>
+        <tr>
+            <td>@Model.SelectedMovie2.Title</td>
+                <td>@Model.SelectedMovie2.ReleaseDate.ToString("d")</td>
+            <td>@Model.SelectedMovie2.Budget</td>
+            <td>@Model.SelectedMovie2.Genre</td>
+        </tr>
+        
+    </table>
+}
+
+

@@ -1,0 +1,22 @@
+﻿@model WebApplication3.Models.ViewModels.CreateRoleVm
+
+<form asp-action="Create" method="post">
+    <div>
+        <select asp-for="ActorId" asp-items="Model.Actors"></select>
+    </div>
+    <div>
+        <select asp-for="MovieId" asp-items="Model.Movies"></select>
+    </div>
+    <div>
+        <input asp-for="Credit" placeholder="Credited Role">
+
+    </div>
+    <div>
+        <label asp-for="Pay" />
+        <input asp-for="Pay" />
+    </div>
+    <input type="hidden" name ="secret" value="Special note that cannot be seen" />
+    <input type="submit" value="Add Role" />
+
+    
+</form>
