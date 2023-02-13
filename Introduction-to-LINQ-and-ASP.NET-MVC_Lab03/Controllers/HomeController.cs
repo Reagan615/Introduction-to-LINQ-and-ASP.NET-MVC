@@ -1,8 +1,10 @@
-﻿using Introduction_to_LINQ_and_ASP.NET_MVC_Lab03.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApplication3.Models;
+using WebApplication3.Models.ViewModels;
+using WebApplication3.Data;
 
-namespace Introduction_to_LINQ_and_ASP.NET_MVC_Lab03.Controllers
+namespace WebApplication3.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,7 +17,8 @@ namespace Introduction_to_LINQ_and_ASP.NET_MVC_Lab03.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            MoviesAndActors vm = new MoviesAndActors(Context.Movies, Context.Actiors, "This is a web app about movies and actors");
+            return View(vm);
         }
 
         public IActionResult Privacy()
